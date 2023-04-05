@@ -3,18 +3,18 @@ import {Form, Label, Input, Button} from 'reactstrap'
 
 function DadosPessoais(){
     return(
-        <form >
+        <Form >
             {/* NOME */}
-            <label htmlFor="inputNome">Nome:</label>
-            <input type="text" name="nome" id="inputName" placeholder="Nome Completo" value={nome}/>
+            <Label htmlFor="inputNome">Nome:</Label>
+            <Input type="text" name="nome" id="inputName" placeholder="Nome Completo" value={nome}/>
             
             {/* EMAIL */}
-            <label htmlFor="inputEmail">Email:</label>
-            <input type="email" name="email" id="imputEmail" value={email}/>
+            <Label htmlFor="inputEmail">Email:</Label>
+            <Input type="email" name="email" id="imputEmail" value={email}/>
 
             {/* BOTÃO */}
-            <button color="primary" type="submit">Enviar</button>
-        </form>
+            <Button color="primary" type="submit">Enviar</Button>
+        </Form>
     );
 }
 
