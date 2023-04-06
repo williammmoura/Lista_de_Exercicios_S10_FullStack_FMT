@@ -1,7 +1,8 @@
 import React from "react";
-import { Form, Label, Input, Button } from "reactstrap";
+import { Form, Label, Input} from "reactstrap";
 
 function Endereco () {
+
     return(
         <Form>
             {/* LOGRADOURO */}
@@ -31,9 +32,6 @@ function Endereco () {
             {/* ESTADO */}
             <Label htmlFor="estado">Estado:</Label>
             <Input type="text" name="estado" id="estado" value={estado} placeholder="Digite o nome do seu Estado" />
-
-            {/* BOTÃO */}
-            <Button color="primary" type="submit">Enviar</Button>
         </Form>
     );
 }
